@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="楽天トラベルで予約できる日本全国のおすすめホテル・旅館を比較紹介。お得な情報や楽天ポイント活用術も掲載。">
+    <title>楽天トラベル ホテル比較ブログ | お得に泊まれる宿探し</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-hotel"></i>
+                        楽天トラベル比較ブログ
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li class="dropdown">
+                            <a href="#">エリアから探す <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="area-tokyo.html">東京</a></li>
+                                <li><a href="area-kyoto.html">京都</a></li>
+                                <li><a href="area-osaka.html">大阪</a></li>
+                                <li><a href="area-okinawa.html">沖縄</a></li>
+                                <li><a href="area-hokkaido.html">北海道</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="points-guide.html">ポイント活用術</a></li>
+                        <li><a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2F" target="_blank" rel="nofollow noopener" class="btn-primary-small">楽天トラベルへ</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>理想のホテル・旅館を見つけよう</h1>
+                <p>楽天トラベルで予約できる全国の宿泊施設を徹底比較</p>
+                <div class="search-box">
+                    <input type="text" placeholder="エリアやホテル名で検索" id="searchInput">
+                    <button class="btn-primary" onclick="location.href='https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2F'">
+                        <i class="fas fa-search"></i> 検索
+                    </button>
+                </div>
+                <div class="hero-badges">
+                    <span><i class="fas fa-star"></i> 楽天ポイントが貯まる</span>
+                    <span><i class="fas fa-tag"></i> お得なクーポン配布中</span>
+                    <span><i class="fas fa-crown"></i> 人気宿ランキング</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 人気エリアセクション -->
+    <section class="popular-areas section">
+        <div class="container">
+            <div class="section-header">
+                <h2>人気エリアから探す</h2>
+                <p>日本全国の人気観光地のホテル・旅館情報</p>
+            </div>
+            <div class="area-grid">
+                <div class="area-card">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&h=400&fit=crop" alt="東京">
+                    <div class="area-card-content">
+                        <h3>東京</h3>
+                        <p>ビジネスから観光まで、都会のホテルを比較</p>
+                        <a href="area-tokyo.html" class="btn-secondary">詳しく見る</a>
+                    </div>
+                </div>
+                <div class="area-card">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop" alt="京都">
+                    <div class="area-card-content">
+                        <h3>京都</h3>
+                        <p>歴史と風情ある古都の宿泊施設</p>
+                        <a href="area-kyoto.html" class="btn-secondary">詳しく見る</a>
+                    </div>
+                </div>
+                <div class="area-card">
+                    <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=600&h=400&fit=crop" alt="大阪">
+                    <div class="area-card-content">
+                        <h3>大阪</h3>
+                        <p>グルメと観光を楽しむ関西の拠点</p>
+                        <a href="area-osaka.html" class="btn-secondary">詳しく見る</a>
+                    </div>
+                </div>
+                <div class="area-card">
+                    <img src="https://sspark.genspark.ai/cfimages?u1=HROMnpm8%2BBXKKSQFc7FADiL%2FWnyM7ygvwQEOH4GQb7BY%2BeOZgpwF4h%2Fn5IkMTNE6QvcKro3M%2FO%2BIMcqVwTJZjtLaMBqqHke92JniGzFX9rRUHNcB5YrpCykVndo9k6nYha%2F2X8pTDgEu0r24ZQ%3D%3D&u2=ZlZjl0MhAjkWrHRE&width=2560" alt="沖縄">
+                    <div class="area-card-content">
+                        <h3>沖縄</h3>
+                        <p>南国リゾートで至福の時間を</p>
+                        <a href="area-okinawa.html" class="btn-secondary">詳しく見る</a>
+                    </div>
+                </div>
+                <div class="area-card">
+                    <img src="https://sspark.genspark.ai/cfimages?u1=dzT9rGqx6gRKKMuCpw2RBar0BcE3%2BBuC7RIngWAG4Wt7W%2B9Vd8wF4rc5dja8m7Zqeoa%2Bm00d9rIwy2D91dturdu1Tw4ImXEMq4SJMubZJqvhFbRGSzH4qR7fVABTS4zuUBpCG4A%2FnM5l91MwvDJGI9tTF0cmqj0%3D&u2=NjyT26VAMUqte4rH&width=2560" alt="北海道">
+                    <div class="area-card-content">
+                        <h3>北海道</h3>
+                        <p>大自然と温泉を満喫する旅</p>
+                        <a href="area-hokkaido.html" class="btn-secondary">詳しく見る</a>
+                    </div>
+                </div>
+                <div class="area-card">
+                    <img src="https://sspark.genspark.ai/cfimages?u1=50bpL51XQ45tqIAWcTqTgmL95SoQ80nkE6ny8tPje5WEIewlPVfOvcCDwRynhums66x0Cw%2BODyT0MSqpcLOKhc%2FSBngT1FQHxIGeQ6IZaylvWpaPU%2B0xpzOi&u2=zdd3hPazSgZQX5TD&width=2560" alt="箱根">
+                    <div class="area-card-content">
+                        <h3>箱根・温泉地</h3>
+                        <p>日帰りも宿泊も楽しめる温泉リゾート</p>
+                        <a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fmovement%2Fkanagawa%2F202411_hakone%2F" target="_blank" rel="nofollow noopener" class="btn-secondary">詳しく見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 楽天ポイントセクション -->
+    <section class="rakuten-points section">
+        <div class="container">
+            <div class="points-content">
+                <div class="points-text">
+                    <h2><i class="fas fa-gem"></i> 楽天ポイントでさらにお得に</h2>
+                    <p>楽天トラベルで予約すると、宿泊料金の1〜10%の楽天ポイントが貯まります！</p>
+                    <ul class="points-benefits">
+                        <li><i class="fas fa-check-circle"></i> 予約でポイントが貯まる</li>
+                        <li><i class="fas fa-check-circle"></i> 貯まったポイントで次回予約</li>
+                        <li><i class="fas fa-check-circle"></i> SPU（スーパーポイントアッププログラム）対象</li>
+                        <li><i class="fas fa-check-circle"></i> キャンペーンでさらにポイントアップ</li>
+                    </ul>
+                    <a href="points-guide.html" class="btn-secondary-large">ポイント活用術を見る</a>
+                </div>
+                <div class="points-image">
+                    <img src="https://sspark.genspark.ai/cfimages?u1=GbbunM3giMDUOE6v%2BwFPtVNljsFfyG%2BUqsCd0jnADK3yjKS3bZqqFaH%2FYIu4iNeZ6s2hjfffGhQFJxvimnreCiQrNF9BZ5QmbORXeb8Ze7dbe8NvQ%2FTLclsEx%2FzdisAxmHgfrcRROOIAVzQ%3D&u2=svkdtWUUIGDJewYW&width=2560" alt="楽天ポイント">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 目的別特集セクション -->
+    <section class="category-section section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>目的から探す</h2>
+                <p>旅のスタイルに合わせたホテル選び</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>ビジネスホテル</h3>
+                    <p>駅近・コスパ重視の出張に最適</p>
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fbusiness%2F" target="_blank" rel="nofollow noopener">詳しく見る →</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-users"></i>
+                    <h3>家族旅行</h3>
+                    <p>子連れに優しい施設が充実</p>
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow noopener">詳しく見る →</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>カップル・記念日</h3>
+                    <p>特別な日にふさわしい宿</p>
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fcouple%2F" target="_blank" rel="nofollow noopener">詳しく見る →</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-hot-tub"></i>
+                    <h3>温泉旅館</h3>
+                    <p>日本の伝統を感じる癒しの宿</p>
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fonsen%2F" target="_blank" rel="nofollow noopener">詳しく見る →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お役立ち情報セクション -->
+    <section class="blog-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2>お役立ち情報</h2>
+                <p>ホテル予約をもっとお得に、もっと便利に</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://sspark.genspark.ai/cfimages?u1=MhMQeVSRf875WF8ZfHhoAciu6HWe8s3NRObUhwAcDsRYtdB5hmVYpQtzXl74w4uSBP6hqqTdY3lqHP5oiQmrJBfOTqLC3tu67aUl479WpWpu&u2=lFa2%2FtAyIIEsY5Ct&width=2560" alt="予約のコツ">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">予約術</span>
+                        <h3>楽天トラベルで最安値で予約する7つのコツ</h3>
+                        <p>キャンペーンやクーポンを活用して、お得に宿泊する方法を解説します。</p>
+                        <a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2F" target="_blank" rel="nofollow noopener">続きを読む →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=400&h=250&fit=crop" alt="ポイント活用">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">ポイント</span>
+                        <h3>楽天ポイントを最大限貯める方法</h3>
+                        <p>SPUの活用やポイントアップキャンペーンの参加方法を詳しく紹介。</p>
+                        <a href="points-guide.html">続きを読む →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://sspark.genspark.ai/cfimages?u1=esE1tl1sytR8MNLqIhfcJ3i3CBtszcomMSqMFklBmjLr7bY4cwclhQf5ft8DDTR92GAS9WjrKK24%2FVTYIfd%2BZDIKTP9R%2BEBkIAHdleWCtEQ0SHyrF6ydcljO6np6%2FopKNchZIWxUJdgcOj1QUHKGnHRmTdaQnYXK4VLK%2BubZbaMs&u2=q%2BSuO9warashVuxi&width=2560" alt="旅行計画">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">旅行計画</span>
+                        <h3>初めての家族旅行 宿選びのポイント</h3>
+                        <p>子連れ旅行で失敗しないホテル・旅館の選び方を徹底解説します。</p>
+                        <a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow noopener">続きを読む →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTAセクション -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>さっそく理想のホテルを探そう</h2>
+                <p>楽天ポイントも貯まってお得に宿泊</p>
+                <a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2F" class="btn-primary-large" target="_blank" rel="nofollow noopener">
+                    楽天トラベルで検索する
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>楽天トラベル比較ブログについて</h4>
+                    <p>全国のホテル・旅館の情報を比較し、お得な予約方法をご紹介するブログです。楽天ポイントを活用してさらにお得に旅行を楽しみましょう。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>人気エリア</h4>
+                    <ul>
+                        <li><a href="area-tokyo.html">東京のホテル</a></li>
+                        <li><a href="area-kyoto.html">京都の旅館</a></li>
+                        <li><a href="area-osaka.html">大阪のホテル</a></li>
+                        <li><a href="area-okinawa.html">沖縄のリゾート</a></li>
+                        <li><a href="area-hokkaido.html">北海道の温泉</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お役立ちリンク</h4>
+                    <ul>
+                        <li><a href="points-guide.html">ポイント活用術</a></li>
+                        <li><a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2F" target="_blank" rel="nofollow noopener">楽天トラベル公式</a></li>
+                        <li><a href="https://hb.afl.rakuten.co.jp/hgc/4e1292eb.3ef35378.4e1292ec.6a7f65be/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fcamp%2F" target="_blank" rel="nofollow noopener">キャンペーン情報</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 楽天トラベル比較ブログ All rights reserved.</p>
+                <p class="disclaimer">※本サイトは楽天アフィリエイトプログラムを利用しています。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
