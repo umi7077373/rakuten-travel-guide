@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://umi7077373.github.io/rakuten-travel-guide/sitemap.xml
